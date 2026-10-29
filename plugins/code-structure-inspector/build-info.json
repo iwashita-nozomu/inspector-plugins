@@ -1,0 +1,7 @@
+{
+  "version": "0.1.2",
+  "target": "aarch64-apple-darwin",
+  "source_commit": "b3bbfa1ed6dc150e5238b5863211747718e3f5c0",
+  "compiler": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "binary_sha256": "6a80900353ef3fce064ce4f9c5840cedf30277a4cd1a61bd83556ad6dd3348b5"
+}
