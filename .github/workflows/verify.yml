@@ -1,0 +1,38 @@
+name: Verify distribution
+
+on:
+  push:
+    branches: [main, macos-arm64, linux-x64, windows-x64]
+    tags: ['v*']
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Offline tests
+        run: python -m unittest discover -s tests -v
+      - name: Verify pins and package bytes
+        run: python scripts/verify.py
+      - name: Native MCP smoke when distribution matches runner
+        shell: python
+        run: |
+          import json, pathlib, subprocess, sys
+          sys.path.insert(0, 'scripts')
+          from verify import native_platform
+          metadata = pathlib.Path('distribution.json')
+          if metadata.exists() and json.loads(metadata.read_text())['platform'] == native_platform():
+              subprocess.run([sys.executable, 'scripts/verify.py', '--smoke'], check=True)
+          else:
+              print('No matching native distribution on this branch; byte checks completed.')

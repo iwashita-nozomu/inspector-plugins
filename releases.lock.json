@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "plugins": [
+    {
+      "name": "github-work-inspector",
+      "version": "0.3.4",
+      "repository": "https://github.com/iwashita-nozomu/github-work-inspector",
+      "source_commit": "a15a11b3168410611baa11af37b8e9532b928c0c",
+      "release": "https://github.com/iwashita-nozomu/github-work-inspector/releases/tag/v0.3.4",
+      "archives": {
+        "macos-arm64": {
+          "name": "github-work-inspector-plugin-v0.3.4-aarch64-apple-darwin.tar.gz",
+          "url": "https://github.com/iwashita-nozomu/github-work-inspector/releases/download/v0.3.4/github-work-inspector-plugin-v0.3.4-aarch64-apple-darwin.tar.gz",
+          "sha256": "50d8987764007f3cba9eeea1636d6e70ccb709adee6ac4dec7ff0160d2db6e7d",
+          "size": 1984967
+        },
+        "linux-x64": {
+          "name": "github-work-inspector-plugin-v0.3.4-x86_64-unknown-linux-gnu.tar.gz",
+          "url": "https://github.com/iwashita-nozomu/github-work-inspector/releases/download/v0.3.4/github-work-inspector-plugin-v0.3.4-x86_64-unknown-linux-gnu.tar.gz",
+          "sha256": "16eff4de9ea06467fd1a0599c1694a2a296c8c8de339b1dadb33ce72235165fa",
+          "size": 2170259
+        },
+        "windows-x64": {
+          "name": "github-work-inspector-plugin-v0.3.4-x86_64-pc-windows-msvc.zip",
+          "url": "https://github.com/iwashita-nozomu/github-work-inspector/releases/download/v0.3.4/github-work-inspector-plugin-v0.3.4-x86_64-pc-windows-msvc.zip",
+          "sha256": "c4f467a1cd36c2e2aa4ea9c35e468b839327f341e6d6fe8b6f42ec75afe270ca",
+          "size": 2569333
+        }
+      }
+    },
+    {
+      "name": "code-structure-inspector",
+      "version": "0.1.2",
+      "repository": "https://github.com/iwashita-nozomu/code-structure-inspector",
+      "source_commit": "b3bbfa1ed6dc150e5238b5863211747718e3f5c0",
+      "release": "https://github.com/iwashita-nozomu/code-structure-inspector/releases/tag/v0.1.2",
+      "archives": {
+        "macos-arm64": {
+          "name": "code-structure-inspector-v0.1.2-aarch64-apple-darwin.tar.gz",
+          "url": "https://github.com/iwashita-nozomu/code-structure-inspector/releases/download/v0.1.2/code-structure-inspector-v0.1.2-aarch64-apple-darwin.tar.gz",
+          "sha256": "ea588440328f721522b076a1953aef2a4e2caa80823d7156705b022ae4671276",
+          "size": 1095683
+        },
+        "linux-x64": {
+          "name": "code-structure-inspector-v0.1.2-x86_64-unknown-linux-gnu.tar.gz",
+          "url": "https://github.com/iwashita-nozomu/code-structure-inspector/releases/download/v0.1.2/code-structure-inspector-v0.1.2-x86_64-unknown-linux-gnu.tar.gz",
+          "sha256": "77d2adfab4397725e5ee42496351d2751dcfbb600e3521cb1521613a70b6b669",
+          "size": 1114413
+        },
+        "windows-x64": {
+          "name": "code-structure-inspector-v0.1.2-x86_64-pc-windows-msvc.zip",
+          "url": "https://github.com/iwashita-nozomu/code-structure-inspector/releases/download/v0.1.2/code-structure-inspector-v0.1.2-x86_64-pc-windows-msvc.zip",
+          "sha256": "d0aeef3fec80e8e904f17bfacc84f4b3b024c7a72cff0485c60cab8016564a66",
+          "size": 1406783
+        }
+      }
+    },
+    {
+      "name": "experiment-model-inspector",
+      "version": "0.1.2",
+      "repository": "https://github.com/iwashita-nozomu/experiment-model-inspector",
+      "source_commit": "09f541c0099857c51a284899f34118ca4e6b567c",
+      "release": "https://github.com/iwashita-nozomu/experiment-model-inspector/releases/tag/v0.1.2",
+      "archives": {
+        "macos-arm64": {
+          "name": "experiment-model-inspector-v0.1.2-macos-arm64.zip",
+          "url": "https://github.com/iwashita-nozomu/experiment-model-inspector/releases/download/v0.1.2/experiment-model-inspector-v0.1.2-macos-arm64.zip",
+          "sha256": "157e7d23769d48896de7feb172db147a2d522bcde3b34c021fc71e6eae64f044",
+          "size": 1138964
+        },
+        "linux-x64": {
+          "name": "experiment-model-inspector-v0.1.2-linux-x64.zip",
+          "url": "https://github.com/iwashita-nozomu/experiment-model-inspector/releases/download/v0.1.2/experiment-model-inspector-v0.1.2-linux-x64.zip",
+          "sha256": "1b356a8043e36222170c3d2b064016a09b91c0068d727435570967050e637023",
+          "size": 1194263
+        },
+        "windows-x64": {
+          "name": "experiment-model-inspector-v0.1.2-windows-x64.zip",
+          "url": "https://github.com/iwashita-nozomu/experiment-model-inspector/releases/download/v0.1.2/experiment-model-inspector-v0.1.2-windows-x64.zip",
+          "sha256": "725fa54749d05772c84d7002a3f5f630844792710c985863cf27499e6f3fd030",
+          "size": 1089932
+        }
+      }
+    }
+  ]
+}
