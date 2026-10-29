@@ -3,7 +3,6 @@ name: Verify distribution
 on:
   push:
     branches: [main, macos-arm64, linux-x64, windows-x64]
-    tags: ['v*']
   pull_request:
 
 permissions:
