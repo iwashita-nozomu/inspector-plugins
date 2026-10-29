@@ -87,7 +87,7 @@ def assemble(platform, archives, output):
             raise ValueError('Archive integrity check failed: ' + pin['name'])
     output.mkdir(parents=True)
     for filename in ('README.md', 'LICENSE', 'SECURITY.md', 'AGENTS.md',
-                     '.gitignore', 'releases.lock.json'):
+                     '.gitignore', '.gitattributes', 'releases.lock.json'):
         shutil.copy2(ROOT / filename, output / filename)
     for directory in ('scripts', 'tests', 'docs', '.github'):
         shutil.copytree(ROOT / directory, output / directory,
