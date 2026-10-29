@@ -63,6 +63,10 @@ identifier before any network request. Foreign binaries are never executed.
 7. Review changes, publish version tags, record readback/CI evidence. Changing a
    catalog is not permission to migrate a user's existing plugin identities.
 
-Repository Actions use read-only tokens and a full-SHA-pinned official checkout,
-with no pull-request-target execution, artifact uploads, credentials, write tokens,
-self-hosted runners, paid larger runners or automatic publishing.
+Repository Actions default to read-only tokens and use full-SHA-pinned official
+Actions. Only the trusted-main CodeQL job receives `security-events: write` to
+upload its scan; PR CodeQL has a read-only token and does not upload. There are no
+pull-request-target workflows, artifact uploads, stored credentials, contents-write
+tokens, self-hosted runners, paid larger runners or automatic publishing.
+Dependabot checks Actions pins only; the Python tooling uses the standard library.
+Upstream Rust dependencies remain managed in each source repository.
