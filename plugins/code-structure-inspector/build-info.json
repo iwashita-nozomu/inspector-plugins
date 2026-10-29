@@ -1,0 +1,7 @@
+{
+  "version": "0.1.2",
+  "target": "x86_64-pc-windows-msvc",
+  "source_commit": "b3bbfa1ed6dc150e5238b5863211747718e3f5c0",
+  "compiler": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "binary_sha256": "a60c298798e96864ae968933a94959303c1a8f49086e5180d31c7e046947b1ee"
+}
