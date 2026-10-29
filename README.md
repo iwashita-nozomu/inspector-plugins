@@ -52,6 +52,14 @@ codex plugin add experiment-model-inspector@inspector-plugins
 Codex CLIの `/plugins` からも、登録したマーケットプレイス内の3候補を選べます。
 確認は `codex plugin marketplace list` と `codex plugin list --marketplace inspector-plugins` で行えます。
 
+### Workでの利用・グラフ表示について
+
+この配布で確認しているのは、**ローカルCodexでの導入と専用MCPツールの認識・呼び出し**です。
+Workのすべての会話で専用ツールが使えることや、Work画面内のグラフ表示は確認できていません。
+専用のWebViewや対話的グラフ画面は含めていません。解析結果の取得と表示は別の段階です。
+別のホスト・別の会話では、プラグインの選択と専用ツールの可用性を改めて確認してください。
+通常のGitHubコネクタによる調査だけでは、github-work-inspectorの動作確認にはなりません。
+
 ## 必要な準備と対応範囲
 
 | 環境 | 配布ブランチ | 同梱バイナリ |
