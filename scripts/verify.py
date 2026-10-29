@@ -73,6 +73,7 @@ def smoke(plugin):
 
 
 def verify(root, run_smoke=False):
+    assert (root / '.gitattributes').read_text().strip() == '* -text'
     lock = json.loads((root / 'releases.lock.json').read_text())
     assert lock['schema_version'] == 1
     assert tuple(p['name'] for p in lock['plugins']) == NAMES
