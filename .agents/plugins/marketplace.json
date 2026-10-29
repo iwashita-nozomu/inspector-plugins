@@ -1,0 +1,44 @@
+{
+  "name": "inspector-plugins",
+  "interface": {
+    "displayName": "Inspector Plugins"
+  },
+  "plugins": [
+    {
+      "name": "github-work-inspector",
+      "source": {
+        "source": "local",
+        "path": "./plugins/github-work-inspector"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "code-structure-inspector",
+      "source": {
+        "source": "local",
+        "path": "./plugins/code-structure-inspector"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "experiment-model-inspector",
+      "source": {
+        "source": "local",
+        "path": "./plugins/experiment-model-inspector"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "version": "0.1.2",
+  "target": "x86_64-unknown-linux-gnu",
+  "source_commit": "b3bbfa1ed6dc150e5238b5863211747718e3f5c0",
+  "compiler": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "binary_sha256": "c9c78cea0346704f662fce31e7444a465c2b301773e43734b60b399f826bcc67"
+}
