@@ -100,7 +100,7 @@ codex plugin add code-structure-inspector@inspector-plugins
 カタログの取得だけで、未選択のプラグインを自動インストール・有効化しません。
 再導入後の実行確認や許可は、利用中のCodexホストの設定に従ってください。
 配布を固定したい場合は、ブランチ名の代わりに
-`v0.1.0-macos-arm64` / `v0.1.0-linux-x64` / `v0.1.0-windows-x64` のタグ、
+`v0.1.1-macos-arm64` / `v0.1.1-linux-x64` / `v0.1.1-windows-x64` のタグ、
 またはその完全なコミットSHAを `--ref` に指定できます。
 
 ## 削除
