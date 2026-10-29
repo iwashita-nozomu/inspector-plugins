@@ -27,6 +27,8 @@ The user chooses an OS branch or immutable version tag at registration. The Git
 marketplace snapshot binds catalog and binaries together. `releases.lock.json`
 pins the upstream source SHA, release URL, archive size and SHA256; `distribution.json`
 records each extracted file's digest. All license files are preserved.
+The root `.gitattributes` disables text conversion for every file, preserving both
+LF and CRLF bytes even when a user's global Git setting enables autocrlf.
 The moving OS branch is a manual update channel. Version tags and complete Git
 commit SHAs provide fixed snapshots. Git tags are not cryptographic signatures.
 
